@@ -1,4 +1,4 @@
-pragma solidity 0.5.1;
+pragma solidity ^0.6.2;
 
 interface OwnedInterface {
     function getOwner() external view returns(address owner);
