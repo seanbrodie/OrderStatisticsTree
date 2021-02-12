@@ -1,4 +1,4 @@
-pragma solidity 0.5.1;
+pragma solidity 0.6.2;
 
 /* 
 Hitchens Order Statistics Tree v0.99
