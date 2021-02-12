@@ -211,7 +211,7 @@ library HitchensOrderStatisticsTreeLib {
             } else if (value > probe) {
                 probe = self.nodes[probe].right;
             } else if (value == probe) {
-                self.nodes[probe].keys.push(key)
+                self.nodes[probe].keys.push(key);
                 self.nodes[probe].keyMap[key] = self.nodes[probe].keys.length - uint(1);
                 return;
             }
@@ -222,7 +222,7 @@ library HitchensOrderStatisticsTreeLib {
         nValue.left = EMPTY;
         nValue.right = EMPTY;
         nValue.red = true;
-        nValue.keys.push(key)
+        nValue.keys.push(key);
         nValue.keyMap[key] = nValue.keys.length - uint(1);
         if (cursor == EMPTY) {
             self.root = value;
