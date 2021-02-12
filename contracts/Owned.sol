@@ -21,12 +21,13 @@ contract Owned is OwnedInterface {
         contractOwner = msg.sender;
     }
 
-    function getOwner() public view returns(address owner) {
+    function getOwner() public override view returns(address owner) {
         return contractOwner;
     }
   
     function changeOwner(address newOwner) 
         public
+        override
         onlyOwner 
         returns(bool success) 
     {
